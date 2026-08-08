@@ -1,0 +1,18 @@
+{
+  "role_score_weight": 1.3823128943903633,
+  "future_role_weight": 0.7379059729770303,
+  "bonus_keep_weight": 37.2372997540527,
+  "danger_weight": 1.8436616651746163,
+  "metadata": {
+    "seed": 20260808,
+    "initial_candidates": 30,
+    "initial_games_per_seat": 25,
+    "top_k": 6,
+    "mutations_per_top": 10,
+    "refine_games_per_seat": 60,
+    "average_final_coins": 1000.2083333333334,
+    "average_coin_change": 0.20833333333333334,
+    "zero_rate": 0.0,
+    "elapsed_seconds": 467.96647119522095
+  }
+}
