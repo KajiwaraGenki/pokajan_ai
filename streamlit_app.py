@@ -15,8 +15,7 @@ from pokajan_simulator_v24 import (
 )
 
 st.set_page_config(
-    page_title="ポカじゃん AI打牌解析",
-    page_icon="🀄",
+    page_title="ポカジャンAI打牌解析[ホロドリ]",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
@@ -183,7 +182,7 @@ config = load_config()
 st.markdown(
     """
     <div class="hero">
-      <div class="hero-title">🀄 ポカじゃん AI打牌解析</div>
+      <div class="hero-title">ポカジャンAI打牌解析[ホロドリ]</div>
       <div class="hero-sub">
         学習済みAIと不完全情報モンテカルロで、
         「どのカードを切ると最終コイン期待値が高いか」を比較します。
