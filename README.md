@@ -1,26 +1,45 @@
-# ポカジャン 打牌解析 Web
+# ポカジャンAI打牌解析｜ホロドリ
 
-## 必要ファイル
+ホロドリのミニゲーム「ポカジャン」の打牌をAIで解析するWebツールです。
 
-- `streamlit_app.py`
-- `pokajan_simulator_v24.py`
-- `pokajan_tuned_config.json`
-- `requirements.txt`
+手札・捨て牌・現在のコイン状況などを入力すると、
+シミュレーションによって各打牌の最終コイン期待値を比較し、
+おすすめの打牌を表示します。
 
-## ローカル起動
+## Web版
 
-```bash
-pip install -r requirements.txt
-streamlit run streamlit_app.py
-```
+以下のStreamlitアプリから利用できます。
 
-## Streamlit Community Cloud で公開
+https://holodori-pokajan-ai.streamlit.app/
 
-1. この4ファイルをGitHubリポジトリへアップロード
-2. Streamlit Community Cloudで「Create app」
-3. GitHubリポジトリを選択
-4. Entrypointに `streamlit_app.py` を指定
-5. Deploy
+## 主な機能
 
-学習済みJSONは、正式ルール対応の `pokajan_simulator_v23_training.py` で生成したものを
-`pokajan_tuned_config.json` という名前で置いてください。
+- 登場する4グループを選択
+- ボーナスホロメンを指定
+- 4人の現在コインを入力
+- 自分の8枚の手札を入力
+- 各プレイヤーの捨て牌を入力
+- 既に役で使用された公開カードを入力
+- AIによる各打牌のシミュレーション
+- 平均最終コイン・期待増減・中央値・0点率を比較
+- 推奨打牌をランキング表示
+
+## 解析について
+
+各打牌について複数の不完全情報局面を生成し、
+その後のゲームをシミュレーションすることで、
+最終的な保有コインの期待値を比較しています。
+
+評価は順位ではなく、最終コインを基準にしています。
+
+## 注意
+
+このツールは非公式のファンメイドツールです。
+
+解析結果はシミュレーションに基づく推定値であり、
+必ずしも最善の打牌を保証するものではありません。
+
+## 対応ゲーム
+
+「ホロライブ ドリームス（ホロドリ）」内ミニゲーム
+「ポカジャン」
