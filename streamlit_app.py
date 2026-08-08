@@ -162,6 +162,7 @@ def card_picker(label, members, key_prefix, used_counts, default_member_index=0)
         index=min(default_member_index, len(members) - 1),
         key=f"{key_prefix}_member",
         label_visibility="collapsed",
+        placeholder="ホロメン名を入力"
     )
 
     color = st.radio(
