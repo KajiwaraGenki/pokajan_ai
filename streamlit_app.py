@@ -15,7 +15,7 @@ from pokajan_simulator_v24 import (
 )
 
 st.set_page_config(
-    page_title="ポカジャンAI打牌解析[ホロドリ]",
+    page_title="ポカジャンAI打牌解析｜ホロドリ",
     layout="wide",
     initial_sidebar_state="collapsed",
 )
