@@ -535,3 +535,11 @@ if st.button("AIで解析する", type="primary", use_container_width=True):
     except Exception as e:
         st.error("解析中にエラーが発生しました。")
         st.exception(e)
+
+st.divider()
+
+st.caption(
+    "※本サイトは非公式のファンメイドツールです。"
+    "ホロライブおよび「ホロライブ ドリームス」と公式の関係はありません。"
+    "解析結果はシミュレーションに基づく推定値です。"
+)
